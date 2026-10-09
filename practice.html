@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borasha | Speaking Practice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-mark" aria-label="Borasha flower logo">🌸</div>
+                <div>
+                    <h1>Borasha</h1>
+                    <small>Learn • Practice • Speak</small>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="lessons.html">Lessons</a>
+                <a href="vocabulary.html">Vocabulary</a>
+                <a href="practice.html" class="active">Speak</a>
+                <a href="translator.html">Translate</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="progress.html">Progress</a>
+                <a href="feedback.html">Survey</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="section-head center">
+            <span class="eyebrow">Speaking Practice</span>
+            <h3>Listen and Speak</h3>
+        </div>
+
+        <div class="card-panel practice-box">
+            <div class="progress-wrap">
+                <div id="practiceProgressText" class="progress-label">Word 1 of 10</div>
+                <div class="progress-bar">
+                    <div id="practiceProgressFill" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="practice-word-box">
+                <div id="targetWord" class="target-word">नमस्कार</div>
+                <div id="pronunciation" class="pronunciation">Namaskar</div>
+                <div id="meaning" class="meaning-badge">Hello</div>
+            </div>
+
+            <div class="button-row practice-buttons">
+                <button id="listenButton" class="btn btn-secondary">🔊 Listen</button>
+                <button id="speakButton" class="btn btn-primary">🎤 Speak</button>
+            </div>
+
+            <div class="speech-output">
+                <p id="speechResult">Your speech will appear here.</p>
+                <p id="speechFeedback" class="feedback-message"></p>
+            </div>
+
+            <div class="button-row practice-buttons">
+                <button id="tryButton" class="btn btn-secondary">Try Again</button>
+                <button id="nextButton" class="btn btn-primary">Next Word</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <h3>🌸 Borasha</h3>
+            <p>Learn local languages at your own pace.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js?v=3"></script>
+</body>
+</html>

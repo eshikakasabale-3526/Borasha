@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borasha | Lesson</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-mark" aria-label="Borasha flower logo">🌸</div>
+                <div>
+                    <h1>Borasha</h1>
+                    <small>Learn • Practice • Speak</small>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="lessons.html" class="active">Lessons</a>
+                <a href="vocabulary.html">Vocabulary</a>
+                <a href="practice.html">Speak</a>
+                <a href="translator.html">Translate</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="progress.html">Progress</a>
+                <a href="feedback.html">Survey</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="section-head center">
+            <span class="eyebrow">Learning Topic</span>
+            <h3 id="lesson-title">Lesson</h3>
+            <p id="lesson-description">Loading lesson...</p>
+        </div>
+
+        <div class="lesson-page-card">
+            <section class="lesson-box">
+                <h4>📚 Learn the Words</h4>
+                <div id="word-list" class="word-list"></div>
+            </section>
+
+            <section class="lesson-box">
+                <h4>💬 Useful Sentences</h4>
+                <div id="sentence-list" class="sentence-list"></div>
+            </section>
+
+            <section class="lesson-box">
+                <h4>🧠 Quick Practice</h4>
+                <p id="question-text" class="question-text"></p>
+                <div id="answer-buttons" class="answer-buttons"></div>
+                <p id="practice-result" class="practice-result"></p>
+            </section>
+
+            <div class="complete-panel">
+                <h4>Lesson complete?</h4>
+                <p>Save your learning progress.</p>
+                <button class="btn btn-primary" onclick="finishLesson()">Complete Lesson</button>
+                <p id="completion-message" class="completion-message"></p>
+            </div>
+
+            <div class="back-link-wrap">
+                <a href="lessons.html" class="btn btn-secondary">← Back to Lessons</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <h3>🌸 Borasha</h3>
+            <p>Learn local languages at your own pace.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

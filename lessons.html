@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borasha | Lessons</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="brand-mark" aria-label="Borasha flower logo">🌸</div>
+                <div>
+                    <h1>Borasha</h1>
+                    <small>Learn • Practice • Speak</small>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="lessons.html" class="active">Lessons</a>
+                <a href="vocabulary.html">Vocabulary</a>
+                <a href="practice.html">Speak</a>
+                <a href="translator.html">Translate</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="progress.html">Progress</a>
+                <a href="feedback.html">Survey</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="section-head center">
+            <span class="eyebrow">Learning Path</span>
+            <h3>Choose a lesson</h3>
+        </div>
+
+        <div class="lesson-grid">
+            <article class="lesson-card" id="lesson-greetings">
+                <span class="lesson-number">Lesson 01</span>
+                <h4>👋 Greetings</h4>
+                <p>Learn simple greetings and polite expressions.</p>
+                <a href="lesson.html?lesson=greetings" class="btn btn-primary">Start Lesson</a>
+                <div class="status" id="status-greetings"></div>
+            </article>
+
+            <article class="lesson-card" id="lesson-introduction">
+                <span class="lesson-number">Lesson 02</span>
+                <h4>🙋 Introduction</h4>
+                <p>Learn how to introduce yourself and say your name.</p>
+                <a href="lesson.html?lesson=introduction" class="btn btn-primary">Start Lesson</a>
+                <div class="status" id="status-introduction"></div>
+            </article>
+
+            <article class="lesson-card" id="lesson-family">
+                <span class="lesson-number">Lesson 03</span>
+                <h4>👨‍👩‍👧 Family</h4>
+                <p>Learn words related to family members and relationships.</p>
+                <a href="lesson.html?lesson=family" class="btn btn-primary">Start Lesson</a>
+                <div class="status" id="status-family"></div>
+            </article>
+
+            <article class="lesson-card" id="lesson-numbers">
+                <span class="lesson-number">Lesson 04</span>
+                <h4>🔢 Numbers</h4>
+                <p>Practice counting and common number words.</p>
+                <a href="lesson.html?lesson=numbers" class="btn btn-primary">Start Lesson</a>
+                <div class="status" id="status-numbers"></div>
+            </article>
+
+            <article class="lesson-card" id="lesson-food">
+                <span class="lesson-number">Lesson 05</span>
+                <h4>🍚 Food</h4>
+                <p>Learn names of common foods and drinks.</p>
+                <a href="lesson.html?lesson=food" class="btn btn-primary">Start Lesson</a>
+                <div class="status" id="status-food"></div>
+            </article>
+
+            <article class="lesson-card" id="lesson-daily">
+                <span class="lesson-number">Lesson 06</span>
+                <h4>💬 Daily Conversation</h4>
+                <p>Practice useful everyday sentences and small talk.</p>
+                <a href="lesson.html?lesson=daily" class="btn btn-primary">Start Lesson</a>
+                <div class="status" id="status-daily"></div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <h3>🌸 Borasha</h3>
+            <p>Learn local languages at your own pace.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        const lessonNames = ["greetings", "introduction", "family", "numbers", "food", "daily"];
+
+        lessonNames.forEach(function (lesson) {
+            if (isLessonCompleted(lesson)) {
+                const card = document.getElementById("lesson-" + lesson);
+                const status = document.getElementById("status-" + lesson);
+
+                if (card) card.classList.add("completed");
+                if (status) status.innerHTML = '<span class="done-tag">✓ Completed</span>';
+            }
+        });
+    </script>
+</body>
+</html>
